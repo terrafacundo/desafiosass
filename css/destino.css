@@ -8,6 +8,7 @@
 
 @media (max-width: 640px) {
   body header {
+    padding-top: 2.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +38,9 @@
     align-items: center;
     margin-top: 2vh;
   }
+  body header #navegadorCompras .listaMarket li {
+    margin-bottom: 2vh;
+  }
   body header #navegadorUsuario {
     grid-area: usuario;
   }
@@ -47,26 +51,31 @@
     margin-top: 2vh;
   }
   body header #navegadorUsuario .navUsu li {
-    margin: 1vh;
+    margin-bottom: 2vh;
     text-align: center;
   }
   body main #slider {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 5vh;
   }
   body main #galeria {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   body main #galeria div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10vh;
+    width: 384px;
   }
   body main #galeria div img {
     width: 384px;
     height: 240px;
+  }
+  body main #galeria div h3 {
+    margin-top: 0.7vh;
   }
   body footer {
     display: flex;
@@ -235,6 +244,62 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    background-color: #fff159;
+  }
+  header nav li {
+    font-size: 24px;
+    color: #736c28;
+    animation-name: secciones;
+    animation-duration: 2s;
+  }
+  header nav li:active {
+    color: #c1b74d;
+  }
+  @keyframes secciones {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 100;
+    }
+  }
+  header nav li a {
+    color: #736c28;
+  }
+
+  main {
+    background-color: #e7e7e7;
+  }
+  main #galeria {
+    animation-duration: 4s;
+    animation-name: galeria;
+  }
+  @keyframes galeria {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 100;
+    }
+  }
+  main #galeria div {
+    background-color: #fff;
+    border-radius: 2%;
+  }
+  main #galeria div img {
+    width: 100%;
+    height: 100%;
+  }
+  main #galeria div:active {
+    transform: scale(1.05, 1.05);
   }
 }
 

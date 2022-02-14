@@ -2,6 +2,7 @@
     body{
         //HEADER DIVISION C GRID, SUBDIVISION FLEX
             header{
+                padding-top:2.5vh;
                 display:flex;
                 flex-direction: column;
                 align-items: center;
@@ -29,6 +30,9 @@
                         flex-direction:column;
                         align-items: center;
                         margin-top: 2vh;
+                        li{
+                            margin-bottom: 2vh;
+                        }
                     }
                 }
                 #navegadorUsuario{
@@ -39,7 +43,7 @@
                         justify-content:center;
                         margin-top: 2vh;
                         li{
-                            margin: 1vh;
+                            margin-bottom: 2vh;
                             text-align: center;
                         }
                         
@@ -49,21 +53,26 @@
         
             main{
                 #slider{
-                    width: 100vw;
+                    width: 100%;
                     margin-bottom: 5vh;
                 }
                 #galeria{
                 //Galeria y disposicion de secciones
                 display:flex;
                 flex-direction: column;
+                align-items: center;
                     div{
                         display: flex;
                         flex-direction:column;
                         align-items: center;
                         margin-bottom:10vh;
+                        width:384px;
                         img{
                             width:384px;
                             height: 240px;
+                        }
+                        h3{
+                            margin-top: 0.7vh;
                         }
                     }
                 }
