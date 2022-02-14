@@ -248,19 +248,21 @@ body{
     main{
         margin-bottom: 10vh;
         #slider{
-            width: 100vw;
+            width: 100%;
             margin-bottom: 10vh;
         }
         #galeria{
         //Galeria y disposicion de secciones
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 5vw;
             div{
                 
                 display: flex;
                 flex-direction:column;
                 align-items: center;
                 margin-bottom:5vh;
+                width: 384px;
                 img{
                     width:384px;
                     height: 240px;
